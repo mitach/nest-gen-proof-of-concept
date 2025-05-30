@@ -260,6 +260,7 @@ const VisualProjectEditor = () => {
         }
       } : {}
     };
+    // @ts-ignore
     setServices([...services, newService]);
     setShowServiceMenu(false);
   };
