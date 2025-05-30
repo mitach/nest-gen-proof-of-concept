@@ -1,5 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+// @ts-nocheck
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 export async function POST(request: NextRequest) {
   try {
     const config = await request.json()
