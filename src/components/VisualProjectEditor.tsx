@@ -19,7 +19,7 @@ const VisualProjectEditor = () => {
     const style = document.createElement('style');
     style.textContent = '@keyframes fadeIn { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } } @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } } @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } } .animate-fadeIn { animation: fadeIn 0.3s ease-out; } .animate-slideIn { animation: slideIn 0.3s ease-out; } .animate-pulse { animation: pulse 2s ease-in-out infinite; } .connection-line { stroke-dasharray: 5; animation: dash 20s linear infinite; } @keyframes dash { to { stroke-dashoffset: -100; } }';
     document.head.appendChild(style);
-    return () => document.head.removeChild(style);
+    return () => {document.head.removeChild(style)};
   }, []);
 
   const [projectName, setProjectName] = useState('my-nestjs-app');
