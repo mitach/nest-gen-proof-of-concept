@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Plus, Trash2, Download, Package, Database, Shield, Users, Globe, Code, 
   Settings, Mail, Key, User, Phone, Hash, Calendar, MapPin, CreditCard, 
   FileText, Image, Bell, MessageSquare, Search, ShoppingCart, BarChart, 
   Layers, Zap, GitBranch, Cloud, Lock, X, ChevronRight, ChevronDown,
-  Server, Network, BoxSelect, Sparkles
+  Server, Sparkles
 } from 'lucide-react';
 
 // @ts-nocheck
