@@ -10,8 +10,6 @@ import {
 } from 'lucide-react';
 
 // @ts-nocheck
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
 
 const VisualProjectEditor = () => {
   // Add animation styles
@@ -260,7 +258,7 @@ const VisualProjectEditor = () => {
         }
       } : {}
     };
-    // @ts-ignore
+    // @ts-expect-error – we override this because XYZ
     setServices([...services, newService]);
     setShowServiceMenu(false);
   };
